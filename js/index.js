@@ -1,11 +1,9 @@
 // Your code goes here
 console.log('test test test')
 // mouseover: 	A pointing device is moved onto the element that has the listener attached or onto one of its children.
-const logoHeading = document.querySelector('.logo-heading')
-console.log(logoHeading)
-// logoHeading.addEventListener("mouseover", function( event ) {   
-//     event.target.style.color = "purple";
-// })
+const logoHeading = document.querySelector('.logo-heading');
+console.log(logoHeading);
+
 let color = 0;
 
 function textColorChange(event) {
@@ -13,7 +11,15 @@ function textColorChange(event) {
     if (color.length < 7) color += "0";
 }
 
-logoHeading.addEventListener('mouseover',textColorChange)
+logoHeading.addEventListener('mouseover',textColorChange);
+
+//mouseup
+
+const headerNav = document.querySelector('.nav');
+
+headerNav.addEventListener("mouseup", function( event ) {   
+    event.target.style.color = "purple";
+})
 
 // keydown: ANY key is pressed
 
@@ -23,11 +29,18 @@ document.addEventListener('keydown', function(eventObj) {
     }
 })
 
+//keyup
+document.addEventListener('keyup', function(eventObj) {
+    if (eventObj.key === 'a') {
+        logoHeading.style.color = 'green'
+    }
+})
+
 // The dblclick event fires when a pointing device button (such as a mouse's primary button) is double-clicked; that is, when it's rapidly clicked twice on a single element within a very short span of time.
 //dblclick fires after two click events (and by extension, after two pairs of mousedown and mouseup events).
 
-const allImage = document.querySelectorAll('img')
-console.log(allImage)
+const allImage = document.querySelectorAll('img');
+console.log(allImage);
 
 allImage.forEach(function(item){
     item.addEventListener('dblclick', myFunc)
@@ -55,8 +68,24 @@ buttons.forEach(function(item){
     }
 })
 
-// const headerBanner = document.querySelector('.main-navigation')
-// console.log(headerBanner)
+
+//contextmenu
+console.log(buttons[1])
+buttons[1].addEventListener('contextmenu', e => {
+    e.preventDefault();
+  });
+//click
+const firstButton = document.querySelector('.btn')
+console.log(firstButton)
+
+firstButton.addEventListener('click',function() {
+        console.log('I am working!')
+    }
+)
+
+firstButton.addEventListener('click' , () => {
+    firstButton.textContent = 'YAY!!!!!'
+})
 
 //scroll
 
@@ -71,7 +100,8 @@ function backgroundColor() {
 document.addEventListener('scroll', () => backgroundColor());
 
 //load
-const pageFooterLoad = document.querySelector('footer');
-window.addEventListener('load', (event) => {
-    pageFooterLoad.style.backgroundColor = 'grey';
+const pageHeaderLoad = document.querySelector('header');
+window.addEventListener('load', () => {
+    pageHeaderLoad.style.backgroundColor = 'pink';
 });
+
