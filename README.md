@@ -10,33 +10,37 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 
 **Follow these steps to set up and work on your project:**
 
-* [ ] Create a forked copy of this project.
-* [ ] Add your project manager as collaborator on Github.
-* [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-* [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [ x ] Create a forked copy of this project.
+* [ x ] Add your project manager as collaborator on Github.
+* [ x ] Clone your OWN version of the repository (Not Lambda's by mistake!).
+* [ x ] Create a new branch: git checkout -b `<firstName-lastName>`.
+* [ x ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [ x ] Push commits: git push origin `<firstName-lastName>`.
 
 #### Launch the project with npm
 
-* [ ] Navigate to the root of the project with your command line.
-* [ ] Run `npm install` to download any dependencies listed in the `package.json` file.
-* [ ] Run `npm start` to compile your project and launch a development server.
-* [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command.
+* [ x ] Navigate to the root of the project with your command line.
+* [ x ] Run `npm install` to download any dependencies listed in the `package.json` file.
+* [ x ] Run `npm start` to compile your project and launch a development server.
+* [ x ] Navigate Chrome to the URL indicated in the output of the `npm start` command.
 
 ### Task 2a: Create Unique Event Listeners
 
 * [ ] Using your [index.js file](js/index.js), create 10 [unique event listeners](https://developer.mozilla.org/en-US/docs/Web/Events). using your creativity to make the Fun Bus site more interactive.  Here are some unique events you could try to use:
-* [ ] `mouseover`
-* [ ] `keydown`
-* [ ] `wheel`
+* [ 1 ] `mouseover` 
+* [ 2 ] `keydown`
+* [ 3 ] `wheel`
 * [ ] `drag / drop`
-* [ ] `load`
+* [ 4 ] `load`
 * [ ] `focus`
 * [ ] `resize`
-* [ ] `scroll`
+* [ 5 ] `scroll`
 * [ ] `select`
-* [ ] `dblclick`
+* [ 6 ] `dblclick`
+* [ 7 ] `mouseup`
+* [ 8 ] `click`
+* [ 9 ] `keyup`
+* [ 10] `contextmenu`
 
 Using the 10 unique events, find ways to update the DOM in creative ways. For example you could change colors, animate objects, remove objects, etc.
 
